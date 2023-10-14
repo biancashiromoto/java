@@ -116,7 +116,7 @@ public class Main {
             Hello world!
             This is a text block.""";
 
-         System.out.println(message);
+//         System.out.println(message);
 
     }
     /* --------------------------------------------------------------------- */
