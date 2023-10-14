@@ -54,7 +54,7 @@ public class Main {
         }
 
         // printf - print formatted - exibe uma string formatada
-       System.out.printf("%s, %s.%n Today is %s.%n", welcomeMessage, name, day); // Good afternoon, Bianca. Today is Saturday
+//       System.out.printf("%s, %s.%n Today is %s.%n", welcomeMessage, name, day); // Good afternoon, Bianca. Today is Saturday
 
         /* --------------------------------------------------------------------- */
 
@@ -104,6 +104,16 @@ public class Main {
 
         int avg = sum / array.length;
         // System.out.println("Average: " + avg); // Average: 5
+
+        /* --------------------------------------------------------------------- */
+
+        // TEXT BLOCK
+
+        String message = """
+            Hello world!
+            This is a text block.""";
+
+         System.out.println(message);
 
     }
     /* --------------------------------------------------------------------- */
