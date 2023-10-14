@@ -23,6 +23,9 @@ public class Main {
 //        System.out.println(cat1.equals(cat2)); // false
 //        System.out.println(cat2.equalsIgnoreCase(cat2LowerCase)); //true
 
+        double weight = 75.25;
+        int age = 30;
+
         /* --------------------------------------------------------------------- */
 
         LocalDateTime now = LocalDateTime.now();
