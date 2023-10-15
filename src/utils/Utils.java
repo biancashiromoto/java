@@ -1,8 +1,23 @@
 package utils;
+import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Utils {
+    public static int getOperation(Scanner scanner, String message) {
+        int input = -1;
+        while(true) {
+            try {
+                System.out.println(message);
+                input = scanner.nextInt();
+                break;
+            } catch (InputMismatchException error) {
+                System.out.println("Input must be a double value");
+                scanner.next();
+            }
+        }
+        return input;
+    }
     public static double getInput(Scanner scanner, String message) {
         // define o valor inicial de input, para poder retorná-lo depois
         double input = -1;
@@ -24,5 +39,19 @@ public class Utils {
             }
         }
         return input;
+    }
+
+    public static ArrayList<Double> setArray(Scanner scanner, String message) {
+        ArrayList<Double> array = new ArrayList<>();
+        double input;
+        // aqui ele executa primeiro a ordem (do) - recupera uma input e a
+        // adiciona ao array enquanto o valor passado como input for
+        // diferente de -1. Se for diferente de -1, ele realiza o código que
+        // estiver abaixo.
+        do {
+            input = Utils.getInput(scanner, message);
+            array.add(input);
+        } while (input != -1);
+        return array;
     }
 }
