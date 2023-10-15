@@ -12,7 +12,7 @@ public class Utils {
                 input = scanner.nextInt();
                 break;
             } catch (InputMismatchException error) {
-                System.out.println("Input must be a double value");
+                System.out.println("Input must be an integer number");
                 scanner.next();
             }
         }
@@ -41,7 +41,10 @@ public class Utils {
         return input;
     }
 
-    public static ArrayList<Double> setArray(Scanner scanner, String message) {
+    public static ArrayList<Double> setArray(Scanner scanner) {
+        String message = """
+                Type a double value to be added to the array
+                or type -1 to see the result""";
         ArrayList<Double> array = new ArrayList<>();
         double input;
         // aqui ele executa primeiro a ordem (do) - recupera uma input e a
