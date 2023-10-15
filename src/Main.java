@@ -10,9 +10,9 @@ public class Main {
         // System.in - input stream, rastreia entradas
         Scanner scanner = new Scanner(System.in);
 
-//        String welcomeMessage = """
-//                  Hello world!
-//                  This is a simple calculator project""";
+        String welcomeMessage = """
+                  Hello world!
+                  This is a simple calculator project""";
 //        System.out.println(welcomeMessage);
 //
 //        double a = Utils.getInput(scanner, "Type a double value: ");
@@ -23,29 +23,23 @@ public class Main {
 //        Calculator.multiply(a, b);
 //        Calculator.divide(a, b);
 
-        String welcomeMessage = """
-                
-                Let's calculate the average of the values in an array.
-                You can type as much as many double values you want,
-                then you can type -1, and the application should stop.
-                """;
-
-        System.out.println(welcomeMessage);
         ArrayList<Double> array = new ArrayList<>();
         double input;
 
+        // aqui ele executa primeiro a ordem (do) - recupera uma input e a
+        // adiciona ao array enquanto o valor passado como input for
+        // diferente de -1. Se for diferente de -1, ele realiza o código que
+        // estiver abaixo.
         do {
             input = Utils.getInput(scanner, "Type a double value: ");
-            if (input == -1) {
-                System.out.println("Exiting input loop");
-                // encerra a aplicação
-                System.exit(0);
-            }
             array.add(input);
         } while (input != -1);
 
-        double result = Calculator.sumArray(array) / array.size();
-        System.out.printf("The average of the numbers in the array is: %s",
-                result);
+//        Calculator.sumArray(array);
+//        Calculator.averageArray(array);
+
+//        double result = Calculator.averageArray(array);
+//        System.out.printf("The average of the numbers in the array is: %s",
+//                result);
     }
 }
