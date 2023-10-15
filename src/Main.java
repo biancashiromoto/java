@@ -14,7 +14,7 @@ public class Main {
         This is a simple calculator project""";
         System.out.println(welcomeMessage);
 
-        double a = Utils.getInput(scanner, "Type a double number: ");
+        double a = Utils.getInput(scanner, "Type a double value: ");
         double b = Utils.getInput(scanner, "Type another double number: ");
 
         if (a != -1 && b != -1) {
