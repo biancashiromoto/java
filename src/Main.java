@@ -17,11 +17,9 @@ public class Main {
         double a = Utils.getInput(scanner, "Type a double value: ");
         double b = Utils.getInput(scanner, "Type another double number: ");
 
-        if (a != -1 && b != -1) {
-            Calculator.sum(a, b);
-            Calculator.subtract(a, b);
-            Calculator.multiply(a, b);
-            Calculator.divide(a, b);
-        }
+        Calculator.sum(a, b);
+        Calculator.subtract(a, b);
+        Calculator.multiply(a, b);
+        Calculator.divide(a, b);
     }
 }
