@@ -14,13 +14,14 @@ public class Main {
         This is a simple calculator project""";
         System.out.println(welcomeMessage);
 
-        int a = Utils.getInput(scanner, "Type an integer number: ");
-        int b = Utils.getInput(scanner, "Type another integer number: ");
+        double a = Utils.getInput(scanner, "Type a double number: ");
+        double b = Utils.getInput(scanner, "Type another double number: ");
 
         if (a != -1 && b != -1) {
             Calculator.sum(a, b);
             Calculator.subtract(a, b);
             Calculator.multiply(a, b);
+            Calculator.divide(a, b);
         }
     }
 }
