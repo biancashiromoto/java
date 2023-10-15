@@ -14,24 +14,13 @@ public class Main {
         This is a simple calculator project""";
         System.out.println(welcomeMessage);
 
-        System.out.println("Type an integer number: ");
-        if(scanner.hasNextInt()) {
-            // lê a linha de texto da entrada do usuário e a retorna como uma
-            // string - aguarda até que o usuário pressione Enter após inserir o
-            // texto
-            int a = scanner.nextInt();
-            System.out.println("Type another integer number: ");
-            if(scanner.hasNextInt()) {
-                int b = scanner.nextInt();
-                scanner.nextLine();
-                Calculator.sum(a, b);
-                Calculator.subtract(a, b);
-                Calculator.multiply(a, b);
-            } else {
-                System.out.println("Input must be an integer");
-            }
-        } else {
-            System.out.println("Input must be an integer");
+        int a = Utils.getInput(scanner, "Type an integer number: ");
+        int b = Utils.getInput(scanner, "Type another integer number: ");
+
+        if (a != -1 && b != -1) {
+            Calculator.sum(a, b);
+            Calculator.subtract(a, b);
+            Calculator.multiply(a, b);
         }
     }
 }
