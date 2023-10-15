@@ -47,7 +47,7 @@ public class Examples {
         String welcomeMessage;
 
         if(now.getHour() >= 0 && now.getHour() < 12) {
-            welcomeMessage = "ood morning";
+            welcomeMessage = "Good morning";
         } else if (now.getHour() >= 12 && now.getHour() < 18) {
             welcomeMessage = "Good afternoon";
         } else if (now.getHour() >= 18 && now.getHour() < 24) {
