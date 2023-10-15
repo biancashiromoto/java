@@ -9,37 +9,71 @@ public class Main {
         // utilizada para obter entradas de dados do usuário, como teclado/arquivo
         // System.in - input stream, rastreia entradas
         Scanner scanner = new Scanner(System.in);
-
         String welcomeMessage = """
                   Hello world!
-                  This is a simple calculator project""";
-//        System.out.println(welcomeMessage);
-//
-//        double a = Utils.getInput(scanner, "Type a double value: ");
-//        double b = Utils.getInput(scanner, "Type another double number: ");
-//
-//        Calculator.sum(a, b);
-//        Calculator.subtract(a, b);
-//        Calculator.multiply(a, b);
-//        Calculator.divide(a, b);
+                  This is a simple calculator project.""";
+        System.out.println(welcomeMessage);
 
-        ArrayList<Double> array = new ArrayList<>();
-        double input;
+        String operationMessage = """
+                First, let's choose an operation.
+                1. Addition
+                2. Subtraction
+                3. Multiplication
+                4. Division
+                5. Average (of values in an array)
+                0. Exit
+                """;
 
-        // aqui ele executa primeiro a ordem (do) - recupera uma input e a
-        // adiciona ao array enquanto o valor passado como input for
-        // diferente de -1. Se for diferente de -1, ele realiza o código que
-        // estiver abaixo.
-        do {
-            input = Utils.getInput(scanner, "Type a double value: ");
-            array.add(input);
-        } while (input != -1);
 
-//        Calculator.sumArray(array);
-//        Calculator.averageArray(array);
+        System.out.println(operationMessage);
 
-//        double result = Calculator.averageArray(array);
-//        System.out.printf("The average of the numbers in the array is: %s",
-//                result);
+        int operation = Utils.getOperation(scanner, "Type a double value");
+
+        switch (operation) {
+            case 1:
+                System.out.println("Addition: ");
+                ArrayList<Double> arraySum = Utils.setArray(scanner, "Type a " +
+                        "double value: ");
+                Calculator.sum(arraySum);
+                double sum = Calculator.sum(arraySum);
+                System.out.printf("The sum of the numbers in the array is: %s",
+                sum);
+                break;
+            case 2:
+                System.out.println("Subtraction: ");
+                ArrayList<Double> arraySubtraction = Utils.setArray(scanner,
+                        "Type a " +
+                "double value: ");
+                double subtraction = Calculator.subtract(arraySubtraction);
+                System.out.printf("The subtraction of the numbers in the " +
+                "array is: %s", subtraction);
+                break;
+            case 3:
+                ArrayList<Double> arrayMultiplication = Utils.setArray(scanner,
+                        "Type a " +
+                                "double value: ");
+                double multiply = Calculator.multiply(arrayMultiplication);
+                System.out.printf("The multiplication of the numbers in the " +
+                "array is: %s", multiply);
+                break;
+            case 4:
+                ArrayList<Double> arrayDivision = Utils.setArray(scanner,
+                        "Type a " +
+                                "double value: ");
+                double division = Calculator.divide(arrayDivision);
+                System.out.printf("The division of the numbers in the " +
+                        "array is: %s", division);
+                break;
+            case 5:
+                ArrayList<Double> arrayAverage = Utils.setArray(scanner,
+                        "Type a " +
+                                "double value: ");
+                double average = Calculator.average(arrayAverage);
+                System.out.printf("The average of the numbers in the " +
+                        "array is: %s", average);
+                break;
+            default:
+                System.out.println("Invalid choice.");
+        }
     }
 }
