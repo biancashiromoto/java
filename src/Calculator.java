@@ -14,13 +14,4 @@ public class Calculator {
         int result = a * b;
         System.out.println("Multiplication: " + result);
     }
-
-    public static void divide(int a, int b) {
-        try {
-            int result = a / b;
-            System.out.println("Division: " + result);
-        } catch (ArithmeticException error) {
-            System.out.println("Can't divide by zero");
-        }
-    }
 }

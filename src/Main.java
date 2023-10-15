@@ -1,3 +1,5 @@
+import utils.Utils;
+
 import java.util.Scanner;
 
 public class Main {
@@ -25,7 +27,6 @@ public class Main {
                 Calculator.sum(a, b);
                 Calculator.subtract(a, b);
                 Calculator.multiply(a, b);
-                Calculator.divide(a, b);
             } else {
                 System.out.println("Input must be an integer");
             }
