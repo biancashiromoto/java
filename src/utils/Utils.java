@@ -55,6 +55,7 @@ public class Utils {
             input = Utils.getInput(scanner, message);
             array.add(input);
         } while (input != -1);
+        array.removeIf(n -> n == -1);
         return array;
     }
 }
