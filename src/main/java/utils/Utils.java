@@ -58,4 +58,9 @@ public class Utils {
         array.removeIf(n -> n == -1);
         return array;
     }
+
+    public static void printResult(double result) {
+        // %.2f representa um número com duas casas decimais
+        System.out.printf("Result: %.2f%n", result);
+    }
 }
