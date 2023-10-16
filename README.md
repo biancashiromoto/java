@@ -9,8 +9,8 @@ This project is an interactive console-based guessing game. The objective is to 
 > ⚠️ Be sure you have JRE (Java Runtime Environment) installed
 
 1. Download and extract the `.zip` file 
-2. Using the terminal, navigate to the project's `src` directory
-3. Run the `.jar` file using the command `java -jar GuessTheNumber.jar`
+2. Using the terminal, navigate to the project's `target` directory
+3. Run the `.jar` file using the command `java -jar guessTheNumber.jar`
 
 > 💬 If you have any suggestions or feedbacks, I would be happy to recieve them through <a href="https://www.linkedin.com/in/bshiromoto/" target="_blank">LinkedIn</a>!
 
@@ -25,8 +25,8 @@ Este projeto é um jogo de adivinhação interativo executado no console. O obje
 > ⚠️ Certifique-se de ter o JRE (Java Runtime Environment) instalado.
 
 1. Faça o download e extraia o arquivo `.zip`
-2. Usando o terminal, navegue até o diretório `src` do projeto
-3. Execute o arquivo `.jar` usando o comando `java -jar GuessTheNumber.jar`
+2. Usando o terminal, navegue até o diretório `target` do projeto
+3. Execute o arquivo `.jar` usando o comando `java -jar guessTheNumber.jar`
 
 > 💬 Se tiver alguma sugestão ou feedback, eu ficaria feliz em recebê-los pelo meu <a href="https://www.linkedin.com/in/bshiromoto/" target="_blank">LinkedIn</a>!
 
