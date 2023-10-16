@@ -40,7 +40,8 @@ public class Main {
                     ArrayList<Double> arraySum = Utils.setArray(scanner);
                     Calculator.sum(arraySum);
                     double sum = Calculator.sum(arraySum);
-                    System.out.printf("The sum of the numbers in the array is: %s",
+                    System.out.printf("The sum of the numbers in the array " +
+                                    "is: %s%n",
                             sum);
                     break;
                 case 2:
@@ -48,28 +49,28 @@ public class Main {
                     ArrayList<Double> arraySubtraction = Utils.setArray(scanner);
                     double subtraction = Calculator.subtract(arraySubtraction);
                     System.out.printf("The subtraction of the numbers in the " +
-                            "array is: %s", subtraction);
+                            "array is: %s%n", subtraction);
                     break;
                 case 3:
                     System.out.println("Multiplication: ");
                     ArrayList<Double> arrayMultiplication = Utils.setArray(scanner);
                     double multiply = Calculator.multiply(arrayMultiplication);
                     System.out.printf("The multiplication of the numbers in the " +
-                            "array is: %s", multiply);
+                            "array is: %s%n", multiply);
                     break;
                 case 4:
                     System.out.println("Division: ");
                     ArrayList<Double> arrayDivision = Utils.setArray(scanner);
                     double division = Calculator.divide(arrayDivision);
                     System.out.printf("The division of the numbers in the " +
-                            "array is: %s", division);
+                            "array is: %s%n", division);
                     break;
                 case 5:
                     System.out.println("Average: ");
                     ArrayList<Double> arrayAverage = Utils.setArray(scanner);
                     double average = Calculator.average(arrayAverage);
                     System.out.printf("The average of the numbers in the " +
-                            "array is: %s", average);
+                            "array is: %s%n", average);
                     break;
                 case 0:
                     System.exit(0);
