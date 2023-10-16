@@ -40,12 +40,10 @@ public class Calculator {
 
     public static double sum(ArrayList<Double> array) {
         double result = 0;
-        StringBuilder response = new StringBuilder();
         for (int i = 0; i < array.size(); i += 1) {
             double value = array.get(i);
             if (value != -1) {
                 result += value;
-                response.append(value).append(", ");
             }
         }
         return result;
