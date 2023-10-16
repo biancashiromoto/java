@@ -6,6 +6,13 @@ This repository contains some projects developed for training my Java skills.
 
 You can find more detailed information about each project in its branch's `README`
 
+## 📝 Installation/Usage
+
+> ⚠️ Be sure you have JRE (Java Runtime Environment) installed
+
+1. Download and extract the `.zip` file 
+2. Using the terminal, run the `.jar` file using the command `java -jar <file-name>.jar`
+
 > 💬 If you have any suggestions or feedbacks, I would be happy to recieve them through <a href="https://www.linkedin.com/in/bshiromoto/" target="_blank">LinkedIn</a>!
 
 <hr>
@@ -16,14 +23,16 @@ Este repositório contém alguns projetos desenvolvidos para treinar minhas habi
 
 Você pode achar informações mais detalhadas sobre cada projeto no `README` da branch.
 
+## 📝 Instalação/Uso
+
+> ⚠️ Certifique-se de ter o JRE (Java Runtime Environment) instalado.
+
+1. Faça o download e extraia o arquivo `.zip`
+2. Usando o terminal, execute o arquivo `.jar` usando o comando `java -jar <file-name>.jar`
+
 > 💬 Se tiver alguma sugestão ou feedback, eu ficaria feliz em recebê-los pelo meu <a href="https://www.linkedin.com/in/bshiromoto/" target="_blank">LinkedIn</a>!
 
 <hr>
-
-<!-- ## 🖼️ Screenshots
-<div style="display:flex;">
-
-</div> -->
 
 ## 🛠️ Technologies used/Tecnologias utilizadas
 ### Programming languages/Linguagens de programação:
