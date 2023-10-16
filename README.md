@@ -2,14 +2,15 @@
 
 ## 🇺🇸 About this project
 
-This repository contains some projects developed for training my Java skills.
+This is a basic Java calculator project that supports fundamentals operations such as addition, subtraction, multiplication, division and finding the average for a set of values.
 
-You can find more detailed information about each project in its branch's `README`
+## 📝 Installation/Usage
 
-## 📝 Installation
-1. Clone the repository ``
-2. 
-3. 
+> ⚠️ Be sure you have JRE (Java Runtime Environment) installed
+
+1. Download and extract the `.zip` file 
+2. Using the terminal, navigate to the project's `src` directory
+3. Run the `.jar` file using the command `java -jar Calculator.jar`
 
 > 💬 If you have any suggestions or feedbacks, I would be happy to recieve them through <a href="https://www.linkedin.com/in/bshiromoto/" target="_blank">LinkedIn</a>!
 
@@ -20,6 +21,14 @@ You can find more detailed information about each project in its branch's `READM
 Este repositório contém alguns projetos desenvolvidos para treinar minhas habilidades em Java.
 
 Você pode achar informações mais detalhadas sobre cada projeto no `README` da branch.
+
+## 📝 Instalação/Uso
+
+> ⚠️ Certifique-se de ter o JRE (Java Runtime Environment) instalado.
+
+1. Faça o download e extraia o arquivo `.zip`
+2. Usando o terminal, navegue até o diretório `src` do projeto
+3. Execute o arquivo `.jar` usando o comando `java -jar Calculator.jar`
 
 > 💬 Se tiver alguma sugestão ou feedback, eu ficaria feliz em recebê-los pelo meu <a href="https://www.linkedin.com/in/bshiromoto/" target="_blank">LinkedIn</a>!
 
