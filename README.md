@@ -34,10 +34,14 @@ Você pode achar informações mais detalhadas sobre cada projeto no `README` da
 
 <hr>
 
-<!-- ## 🖼️ Screenshots
-<div style="display:flex;">
+## 🖼️ Screenshots
+<div style="display:flex; justify-content: center; gap: 20px">
 
-</div> -->
+  <img alt="Calculator 01" src="./screenshots/screenshot-01.png"  height="300" width="475">
+  </img>
+  <img alt="Calculator 02" src="./screenshots/screenshot-02.png"  height="300" width="475">
+  </img>
+</div>
 
 ## 🛠️ Technologies used/Tecnologias utilizadas
 ### Programming languages/Linguagens de programação:
