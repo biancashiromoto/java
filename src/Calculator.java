@@ -1,5 +1,3 @@
-import utils.Utils;
-
 import java.util.ArrayList;
 import java.util.Scanner;
 public class Calculator {
@@ -41,7 +39,7 @@ public class Calculator {
     }
 
     public static double sum(ArrayList<Double> array) {
-        double result = array.get(0);
+        double result = 0;
         StringBuilder response = new StringBuilder();
         for (int i = 0; i < array.size(); i += 1) {
             double value = array.get(i);
