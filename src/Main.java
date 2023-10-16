@@ -61,7 +61,7 @@ public class Main {
             }
             System.out.printf("""
                             ____________________________________________________
-                            The secret number was: %d""", number);
+                            The secret number was: %d%n""", number);
         } catch (InterruptedException error) {
             error.printStackTrace();
         }
