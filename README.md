@@ -1,10 +1,8 @@
-# ☕ Java Guessing Game
+# ⁉️ Java Guessing Game
 
 ## 🇺🇸 About this project
 
-This repository contains some projects developed for training my Java skills.
-
-You can find more detailed information about each project in its branch's `README`.
+This project is an interactive console-based guessing game. The objective is to guess the secret number in a range from 1 to 100, within five trials.
 
 ## 📝 Installation/Usage
 
@@ -20,9 +18,7 @@ You can find more detailed information about each project in its branch's `READM
 
 ## 🇧🇷 Sobre este projeto
 
-Este repositório contém alguns projetos desenvolvidos para treinar minhas habilidades em Java.
-
-Você pode achar informações mais detalhadas sobre cada projeto no `README` da branch.
+Este projeto é um jogo de adivinhação interativo executado no console. O objetivo é adivinhar o número secreto em um intervalo de 0 a 100, em cinco tentativas.
 
 ## 📝 Instalação/Uso
 
