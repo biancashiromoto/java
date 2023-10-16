@@ -37,9 +37,7 @@ Você pode achar informações mais detalhadas sobre cada projeto no `README` da
 ## 🖼️ Screenshots
 <div style="display:flex; justify-content: center; gap: 20px">
 
-  <img alt="Calculator 01" src="./screenshots/screenshot-01.png"  height="300" width="475">
-  </img>
-  <img alt="Calculator 02" src="./screenshots/screenshot-02.png"  height="300" width="475">
+  <img alt="Calculator 01" src="./screenshots/screenshot-01.png"  height="500" width="475">
   </img>
 </div>
 
