@@ -6,7 +6,7 @@ public class Main {
 
     public static void main(String[] args) throws InterruptedException {
         try {
-            int counter = 0;
+            int counter = 1;
             Scanner scanner = new Scanner(System.in);
             System.out.println("""
                     ___________________________________________________
@@ -49,7 +49,7 @@ public class Main {
                     Thread.sleep(250);
                     System.out.printf("""
                             ____________________________________________________
-                            COUNGRATULATIONS!!!
+                            CONGRATULATIONS!!!
                             The secret number is %d!%n""", number);
                     if (counter > 0) {
                         System.out.printf("""
@@ -59,6 +59,9 @@ public class Main {
                     break;
                 }
             }
+            System.out.printf("""
+                            ____________________________________________________
+                            The secret number was: %d""", number);
         } catch (InterruptedException error) {
             error.printStackTrace();
         }
