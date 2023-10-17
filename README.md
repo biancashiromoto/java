@@ -38,6 +38,9 @@ Você pode achar informações mais detalhadas sobre cada projeto no `README` da
 ### Programming languages/Linguagens de programação:
 ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white)
 
+### Frameworks and libraries/Frameworks e bibliotecas:
+[![Maven](https://img.shields.io/badge/apache_maven-C71A36?style=for-the-badge&logo=apachemaven&logoColor=white)]()
+
 ### Tools and platforms/Ferramentas e plataformas:
 [![Git](https://img.shields.io/badge/Git-E44C30?style=for-the-badge&logo=git&logoColor=white)]()
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)]()
