@@ -10,18 +10,21 @@ public class Main {
             Scanner scanner = new Scanner(System.in);
             System.out.println("""
                     ___________________________________________________
+                    
                     Hello world!
                     This is a guessing game!""");
             Thread.sleep(500);
 
             System.out.println("""
                     ____________________________________________________
+                    
                     The application will sort a random number from 1 to 100,
                     and you have to guess what that number is.""");
             Thread.sleep(500);
 
             System.out.println("""
                     ____________________________________________________
+                    
                     You have five chances.
                     Good luck!""");
             Thread.sleep(500);
@@ -33,6 +36,7 @@ public class Main {
                 // solicita um guess
                 String message = String.format("""
                         ____________________________________________________
+                        
                         Guess #%d:\s""", counter);
                 int guess = Utils.getInput(scanner, message);
                 // adiciona uma unidade ao counter
@@ -42,6 +46,8 @@ public class Main {
             }
             System.out.printf("""
                             ____________________________________________________
+                            
+                            Oh no!
                             The secret number was: %d%n""", secretNumber);
         } catch (InterruptedException error) {
             error.printStackTrace();

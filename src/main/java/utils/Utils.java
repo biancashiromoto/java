@@ -32,16 +32,19 @@ public class Utils {
                 Thread.sleep(250);
                 System.out.println("""
                             ____________________________________________________
+                            
                             Your guess is bigger than the secret number.""");
             } else if (guessedNumber < secretNumber) {
                 Thread.sleep(250);
                 System.out.println("""
                             ____________________________________________________
+                            
                             Your guess is smaller than the secret number.""");
             } else {
                 Thread.sleep(250);
                 System.out.printf("""
                             ____________________________________________________
+                            
                             CONGRATULATIONS!!!
                             The secret number is %d!%n""", secretNumber);
                 if (guessedNumber > 0) {
