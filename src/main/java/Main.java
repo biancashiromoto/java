@@ -26,42 +26,23 @@ public class Main {
                     Good luck!""");
             Thread.sleep(500);
 
-            int number = Utils.getRandomNumber();
+            int secretNumber = Utils.getRandomNumber();
 
+            // enquanto counter for menor ou igual a 5
             while(counter <= 5) {
+                // solicita um guess
                 String message = String.format("""
                         ____________________________________________________
-                        Guess #%d: """, counter);
+                        Guess #%d:\s""", counter);
                 int guess = Utils.getInput(scanner, message);
+                // adiciona uma unidade ao counter
                 counter += 1;
 
-                if (guess > number) {
-                    Thread.sleep(250);
-                    System.out.println("""
-                            ____________________________________________________
-                            Your guess is bigger than the secret number.""");
-                } else if (guess < number) {
-                    Thread.sleep(250);
-                    System.out.println("""
-                            ____________________________________________________
-                            Your guess is smaller than the secret number.""");
-                } else {
-                    Thread.sleep(250);
-                    System.out.printf("""
-                            ____________________________________________________
-                            CONGRATULATIONS!!!
-                            The secret number is %d!%n""", number);
-                    if (counter > 0) {
-                        System.out.printf("""
-                            You took %d chances to guess.%n""", counter - 1);
-                    }
-                    System.exit(0);
-                    break;
-                }
+                Utils.compareValues(guess, secretNumber, counter);
             }
             System.out.printf("""
                             ____________________________________________________
-                            The secret number was: %d%n""", number);
+                            The secret number was: %d%n""", secretNumber);
         } catch (InterruptedException error) {
             error.printStackTrace();
         }
