@@ -43,7 +43,7 @@ public class Utils {
 
     public static ArrayList<Double> setArray(Scanner scanner) {
         String message = """
-                Type a double value to be added to the array and then press Enter
+                Type a value and then press Enter
                 or type -1 to see the result""";
         ArrayList<Double> array = new ArrayList<>();
         double input;

@@ -24,7 +24,7 @@ public class Main {
                     2. Subtraction
                     3. Multiplication
                     4. Division
-                    5. Average (of values in an array)
+                    5. Average
                     0. Exit
                     ____________________________________________________
                     """;
