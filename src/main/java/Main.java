@@ -38,8 +38,8 @@ public class Main {
                 case 1:
                     System.out.println("Addition: ");
                     ArrayList<Double> arraySum = Utils.setArray(scanner);
-                    Calculator.sum(arraySum);
-                    double sum = Calculator.sum(arraySum);
+                    Calculator.sum(arraySum, 0);
+                    double sum = Calculator.sum(arraySum, 0);
                     Utils.printResult(sum);
                     break;
                 case 2:
