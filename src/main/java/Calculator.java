@@ -38,19 +38,19 @@ public class Calculator {
         return result;
     }
 
-    public static double sum(ArrayList<Double> array) {
-        double result = 0;
-        for (int i = 0; i < array.size(); i += 1) {
-            double value = array.get(i);
-            if (value != -1) {
-                result += value;
-            }
+    public static double sum(ArrayList<Double> array, int index) {
+//        caso base: index == array.size() - 1
+        if (index == array.size() - 1) {
+            return array.get(index);
         }
-        return result;
+//        chamada recursiva: sum(array, index + 1)
+//        progresso para o caso base: progride no array
+//        combinação dos resultados:
+        return array.get(index) + sum(array, index + 1);
     }
 
     public static double average(ArrayList<Double> array) {
-        double sum = sum(array);
+        double sum = sum(array, 0);
         return sum / array.size();
     }
 }
