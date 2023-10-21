@@ -52,7 +52,7 @@ public class Main {
                     System.out.println("Multiplication: ");
                     ArrayList<Double> arrayMultiplication = Utils.setArray(scanner);
                     double multiplication =
-                            Calculator.multiply(arrayMultiplication);
+                            Calculator.multiply(arrayMultiplication, 0);
                     Utils.printResult(multiplication);
                     break;
                 case 4:
