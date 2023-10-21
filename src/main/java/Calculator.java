@@ -16,15 +16,11 @@ public class Calculator {
         return result;
     }
 
-    public static double multiply(ArrayList<Double> array) {
-        double result = array.get(0);
-        for (int i = 1; i < array.size(); i++) {
-            double value = array.get(i);
-            if (value != -1) {
-                result = result * value;
-            }
+    public static double multiply(ArrayList<Double> array, int index) {
+        if (index == array.size() - 1) {
+            return array.get(index);
         }
-        return result;
+        return array.get(index) * multiply(array, index + 1);
     }
 
     public static double divide(ArrayList<Double> array) {
