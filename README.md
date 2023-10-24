@@ -13,7 +13,7 @@ You can find more detailed information about each project in its branch's `READM
 1. Download and extract the `.zip` file 
 2. Using the terminal, run the `.jar` file using the command `java -jar <file-name>.jar`
 
-> 💬 If you have any suggestions or feedbacks, I would be happy to recieve them through <a href="https://www.linkedin.com/in/bshiromoto/" target="_blank">LinkedIn</a>!
+> 💬 If you have any suggestions or feedbacks, I would be happy to receive them through <a href="https://www.linkedin.com/in/bshiromoto/" target="_blank">LinkedIn</a>!
 
 <hr>
 
