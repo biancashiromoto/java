@@ -42,4 +42,19 @@ public class Pokemon {
         }
         return null;
     }
+
+    public static String[] getPokemonName() {
+        try {
+            JsonObject response = Pokemon.getRandomPokemon();
+            String pokemonName = response.get("name").getAsString();
+            String secretName = "";
+            for (int i = 0; i < pokemonName.length(); i += 1) {
+                secretName = secretName.concat("_ ");
+            }
+            return new String[]{pokemonName, secretName};
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 }
