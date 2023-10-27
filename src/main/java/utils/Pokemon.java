@@ -5,8 +5,13 @@ import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
+import com.google.gson.JsonArray;
+import com.google.gson.JsonElement;
+import com.google.gson.JsonObject;
+import com.google.gson.JsonParser;
+
 public class Pokemon {
-    public static String fetch() {
+    public static JsonArray fetch() {
         try {
             // cria um cliente HTTP
             HttpClient client = HttpClient.newHttpClient();
@@ -20,7 +25,18 @@ public class Pokemon {
             HttpResponse<String> response = client.send(request,
                     HttpResponse.BodyHandlers.ofString());
             String body = response.body();
-            return body;
+            return JsonParser.parseString((body)).getAsJsonObject().getAsJsonArray("results");
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public static JsonObject getRandomPokemon() {
+        try {
+            JsonArray pokemons = fetch();
+            int randomNumber = (int) (Math.random() * pokemons.size());
+            return pokemons.get(randomNumber).getAsJsonObject();
         } catch (Exception e) {
             e.printStackTrace();
         }
