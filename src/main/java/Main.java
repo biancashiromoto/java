@@ -10,8 +10,12 @@ public class Main {
     public static void main(String[] args) {
         try {
             JsonObject response = Pokemon.getRandomPokemon();
-            JsonElement pokemonName = response.get("name");
-
+            String pokemonName = response.get("name").getAsString();
+            String secretName = "";
+            for (int i = 0; i < pokemonName.length(); i += 1) {
+                secretName = secretName.concat("_ ");
+            }
+            System.out.println(secretName);
 
             Scanner scanner = new Scanner(System.in);
         } catch (Exception e) {
