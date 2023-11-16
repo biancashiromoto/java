@@ -14,4 +14,25 @@ public class Utils {
 
 		return weight / height2;
 	}
+
+	public static String checkCategory(double bmi) {
+		int bmiCategory = (int) bmi / 5;
+		String category;
+
+		switch (bmiCategory) {
+			case 0:
+				category = "Underweight";
+				break;
+			case 1:
+				category = "Normal weight";
+				break;
+			case 2:
+				category = "Overweight";
+				break;
+			default:
+				category = "Obese";
+				break;
+		}
+		return category;
+	}
 }
