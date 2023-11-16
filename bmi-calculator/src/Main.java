@@ -40,9 +40,20 @@ public class Main {
 					Enter your height:\s""");
 
 				double bmi = Utils.calculateBMI(weight, height);
+
+				String category = Utils.checkCategory(bmi);
+
 				System.out.printf("""
 					_________________________________
 					Your BMI is: %2.2f%n""", bmi);
+				System.out.printf("""
+					_________________________________
+					Your BMI category is: %s%n""", category);
+				Thread.sleep(500);
+				System.out.print("""
+						_________________________________
+						Remember:  BMI is a general indicator and may not accurately reflect individual health.\s
+						It can be influenced by factors such as body composition, muscle mass, and bone density.""");
 			} else {
 				scanner.close();
 			}
